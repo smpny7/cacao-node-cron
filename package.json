@@ -1,0 +1,39 @@
+{
+  "name": "cacao-node-cron",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "dts build",
+    "lint": "dts lint",
+    "prepare": "dts build",
+    "start": "node dist/index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "dts lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.1.2",
+    "@tsconfig/recommended": "^1.0.2",
+    "@types/node-cron": "^3.0.7",
+    "axios": "^1.2.3",
+    "dotenv": "^16.0.3",
+    "dts-cli": "^1.6.3",
+    "envsafe": "^2.0.3",
+    "husky": "^8.0.3",
+    "node-cron": "^3.0.2",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  }
+}
